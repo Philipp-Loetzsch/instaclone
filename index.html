@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philipps Instaclone</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates/globalstyle.css">
+    <link rel="stylesheet" href="templates/header.css">
+    <link rel="stylesheet" href="templates/footer.css">
+    <script src="script.js"></script>
+    <script src="globalvariables.js"></script>
+    <script src="json.js"></script>
 </head>
-<body>
-    
+<body onload="includeHTML()">
+    <header  w3-include-html="./templates/header.html"></header>
+    <main>
+        <section>
+            <h1>Überschrift 1</h1>
+            <article><img src="" alt="Schlagzeile"></article>
+            <article>kommentare</article>
+            <div><button>like</button>
+            <button>kommentieren</button></div>
+        </section>
+    </main>
+    <footer w3-include-html="./templates/footer.html"></footer>
 </body>
 </html>
