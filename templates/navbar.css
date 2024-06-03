@@ -1,0 +1,12 @@
+navbar{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+#head{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+}

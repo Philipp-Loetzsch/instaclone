@@ -1,0 +1,51 @@
+let contents = [
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+  {
+    profilpic: "Profilbild",
+    headline: "Überschrift 1",
+    location: "Ort 1",
+    image: "img 1",
+    comments: [],
+  },
+];
