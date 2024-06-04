@@ -1,8 +1,11 @@
 sidebar {
-  background-color: rgb(49, 47, 47);
+  background-image: linear-gradient(rgb(24, 28, 34), rgb(75, 58, 121)) ;
+  box-shadow: 6px 0px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0 8px;
   cursor: default;
   width: 20%;
+  border-radius: 0 10px 10px 0;
+  z-index: 99;
 }
 navbar {
   display: flex;
@@ -16,7 +19,8 @@ navbar {
   align-items: center;
   gap: 24px;
   img {
-    width: 72px;
+    width: 40%;
+    max-width: 72px;
     border-radius: 10px;
   }
 }
