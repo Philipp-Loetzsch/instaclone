@@ -1,0 +1,49 @@
+sidebar {
+  background-color: rgb(49, 47, 47);
+  padding: 0 8px;
+  cursor: default;
+  width: 20%;
+}
+navbar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+#head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  img {
+    width: 72px;
+    border-radius: 10px;
+  }
+}
+#profileOverview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#profileStats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  color: gray;
+}
+navigation {
+  padding-left: 24px;
+  box-sizing: border-box;
+  margin-top: 32px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  a {
+    color: aliceblue;
+    text-decoration: none;
+  }
+}
