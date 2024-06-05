@@ -5,8 +5,9 @@ let content = [
     location: "Mauzhausen",
     image: "assests/img/katzen.jpg",
     likes: 345,
-    mylike: [1],
-    comments: [],
+    mylike: [0],
+    user:["katzenonkel43", "mauzi052"],
+    comments: ["super süß", "*.*"],
 
   },
   {
@@ -15,7 +16,7 @@ let content = [
     location: "Mauzhausen",
     image: "assests/img/katzen.jpg",
     likes: 345,
-    mylike: [1],
+    mylike: [0],
     comments: [],
   },
   {

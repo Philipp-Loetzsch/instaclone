@@ -1,11 +1,10 @@
 function showPosts() {
-
   let post = document.getElementById(`post`);
   post.innerHTML = "";
 
   for (let i = 0; i < content.length; i++) {
     const posts = content[i];
-    let addition = posts.likes + posts.mylike[0]
+    let addition = posts.likes + posts.mylike[0];
     post.innerHTML += /* html */ `
     <div class="post">
       <div class="p-head">
@@ -20,9 +19,17 @@ function showPosts() {
         <button>like</button>
         <button>allcomments</button>
         <button>share</button>
-      </div>
-      <div>gefällt ${addition}  anderen</div>
-      
+      </div> <br>
+      <div style="color:white;">gefällt ${addition}  anderen</div>
+      <div id="comments${i}"></div>
     </div>`;
+    let comment = document.getElementById(`comments${i}`);
+    for (let j = 0; j < posts["comments"].length; j++) {
+      const mycomment = posts["comments"][j];
+      const username = posts["user"][j];
+      comment.innerHTML += /* html */ `
+      <div>${username}</div>
+      <div>${mycomment}</div>`;
+    }
   }
 }
