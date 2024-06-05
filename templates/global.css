@@ -1,0 +1,9 @@
+.d-flex {
+    display: flex;
+}
+h3{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}

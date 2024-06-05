@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="classstyle.css" />
     <link rel="stylesheet" href="templates/sidebar.css" />
     <link rel="stylesheet" href="templates/footer.css" />
+    <link rel="stylesheet" href="/templates/global.css" />
+    <script src="onload.js"></script>
     <script src="script.js"></script>
-    <script src="globalvariables.js"></script>
-    <script src="json.js"></script>
+    <script src="content.js"></script>
   </head>
-  <body onload="includeHTML()">
+  <body onload="includeHTML(); showPosts()">
     <main>
       <sidebar w3-include-html="./templates/sidebar.html"></sidebar>
       <section>
@@ -30,68 +31,68 @@
             <button id="addPhoto"><img src="" alt="+" /> Add photo</button>
           </div>
         </header>
-        <article >
+        <article>
           <h2>Stories</h2>
           <div id="storiepics">
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-          <img
-            class="profilPic"
-            src="/assests/img/profilpicPL.jpg"
-            alt="Profilbild"
-          />
-        </div>
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+            <img
+              class="profilpic"
+              src="/assests/img/profilpicPL.jpg"
+              alt="Profilbild"
+            />
+          </div>
         </article>
         <article>
-          <h2>Feed</h1>
+          <h2>Feed</h2>
           <div id="post"></div>
         </article>
       </section>

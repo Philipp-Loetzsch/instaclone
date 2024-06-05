@@ -15,10 +15,11 @@
     padding: 15px;
     box-sizing: border-box;
     background-image: linear-gradient(to right, rgb(226, 78, 78), rgb(224, 186, 17));
+    cursor: pointer;
   }
   #storiepics{
     display: flex;
-    gap: 30px;
+    gap: 3%;
     overflow: hidden;
 
   }
