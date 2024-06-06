@@ -1,9 +1,9 @@
 sidebar {
-  background-image: linear-gradient(rgb(24, 28, 34), rgb(75, 58, 121)) ;
+  background-image: linear-gradient(rgb(24, 28, 34), rgb(75, 58, 121));
   box-shadow: 6px 0px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0 8px;
   cursor: default;
-  min-width:300px ;
+  min-width: 300px;
   border-radius: 0 10px 10px 0;
   z-index: 99;
 }
@@ -32,7 +32,18 @@ navbar {
 #profileStats {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+ 
+  tbody {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 }
 .description {
   color: gray;
@@ -49,26 +60,20 @@ navigation {
     color: aliceblue;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     text-decoration: underline;
   }
-  img{
+  img {
     width: 30px;
-   
   }
- 
 }
-.menu{
+.menu {
   display: flex;
   align-items: center;
   gap: 24px;
   cursor: pointer;
 }
-#imgFeed{
+#imgFeed {
   width: 50px;
 }
-tr{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+

@@ -20,7 +20,7 @@ let content = [
     mylike: false,
     linksurl: [],
     link:[],
-    user: ["erzfeind1", "mauzi052"],
+    user: ["Katzenonkel64", "mauzi052"],
     comments: ["Klasse", ":-*"],
   },
   {
