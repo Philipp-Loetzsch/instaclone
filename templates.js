@@ -1,4 +1,4 @@
-function contentHTML(i, posts, addition) {
+function contentHTML(i, posts) {
   return /* html */ `
     <div class="post">
       <div class="p-head">
@@ -14,7 +14,7 @@ function contentHTML(i, posts, addition) {
         <button>allcomments</button>
         <button>share</button>
       </div> <br>
-      <div style="color:white;">gefällt ${addition}  anderen</div> <br>
+      <div style="color:white;" id="like${i}">gefällt ${posts["likes"]}  anderen</div> <br>
       <div id="comments${i}"></div> <br>
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
@@ -22,11 +22,13 @@ function contentHTML(i, posts, addition) {
 
 function likePost(i) {
   let like = content[i];
-  if (like.mylike == 0) {
-    like.mylike.push(1);
-   
-  } else {
-    like.mylike.push(0);
-    
+  if (like["mylike"] == false) {
+    like["mylike"] = true;
+    like["likes"] += 1;
   }
+  else if(like["mylike"] == true){
+    like["mylike"] = false;
+    like["likes"] -= 1;
+  }
+  document.getElementById(`like${i}`).innerHTML= ` gefällt  ${like["likes"]}  anderen`
 }

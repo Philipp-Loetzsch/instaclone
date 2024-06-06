@@ -1,14 +1,9 @@
 function showPosts() {
   let post = document.getElementById(`post`);
   post.innerHTML = "";
-
   for (let i = 0; i < content.length; i++) {
     const posts = content[i];
-    if (posts.mylike == "") {
-      posts.mylike.push(0);
-    }
-    const addition = posts.likes + posts.mylike[0];
-    post.innerHTML += contentHTML(i, posts, addition);
+    post.innerHTML += contentHTML(i, posts);
     editComment(i);
   }
 }
