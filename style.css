@@ -19,7 +19,7 @@
   }
   #storiepics{
     display: flex;
-    gap: 3%;
+    gap: 32px;
     overflow: hidden;
 
   }

@@ -7,17 +7,16 @@ function contentHTML(i, posts) {
             <h3>${posts["name"]}</h3>
             <span>${posts["location"]}</span>
           </div>
-      </div>
-      <img src="${posts["image"]}" alt="Inhaltsbild">
+      </div> <br>
+      <img class="postimage" src="${posts["image"]}" alt="Inhaltsbild">
       <div>
         <button onclick="likePost(${i})">like</button>
         <button>allcomments</button>
         <button>share</button>
-      </div> <br>
-      <div style="color:white;" id="like${i}"></div> <br>
-      <div><a class="hashtags" href="${posts["linksurl"]}">#${posts["link"]}</a></div> <br>
-      <div id="comments${i}"></div> <br>
+      </div> 
+      <p> <div style="color:white;" id="like${i}"></div> </p>
+      <div><a class="hashtags" id="hashtags${i}" href="${posts["linksurl"]}">#${posts["link"]}</a></div>
+      <p><div id="comments${i}"></div> </p>
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
-    }
-
+}

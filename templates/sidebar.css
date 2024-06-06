@@ -3,7 +3,7 @@ sidebar {
   box-shadow: 6px 0px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0 8px;
   cursor: default;
-  width: 20%;
+  min-width:300px ;
   border-radius: 0 10px 10px 0;
   z-index: 99;
 }
@@ -19,8 +19,7 @@ navbar {
   align-items: center;
   gap: 24px;
   img {
-    width: 40%;
-    max-width: 72px;
+    width: 72px;
     border-radius: 10px;
   }
 }
@@ -50,4 +49,26 @@ navigation {
     color: aliceblue;
     text-decoration: none;
   }
+  a:hover{
+    text-decoration: underline;
+  }
+  img{
+    width: 30px;
+   
+  }
+ 
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+#imgFeed{
+  width: 50px;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

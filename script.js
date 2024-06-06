@@ -4,6 +4,9 @@ function showPosts() {
   for (let i = 0; i < content.length; i++) {
     const posts = content[i];
     post.innerHTML += contentHTML(i, posts);
+    if (posts["linksurl"] == "") {
+      document.getElementById(`hashtags${i}`).classList.add("d-none");
+    }
     editComment(i);
     likePost(i);
   }
@@ -36,11 +39,10 @@ function likePost(i) {
   if (like["mylike"] == false) {
     like["mylike"] = true;
     like["likes"] += 1;
-  }
-  else{
+  } else {
     like["mylike"] = false;
     like["likes"] -= 1;
   }
-  showLike.innerHTML= ` gefällt ${like["likes"]} anderen`
+  showLike.innerHTML = ` gefällt ${like["likes"]} anderen`;
   saveLocal();
 }
