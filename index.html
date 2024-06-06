@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="templates/footer.css" />
     <link rel="stylesheet" href="/templates/global.css" />
     <script src="onload.js"></script>
+    <script src="localsave.js"></script>
     <script src="templates.js"></script>
     <script src="script.js"></script>
     <script src="content.js"></script>
   </head>
-  <body onload="includeHTML(); showPosts()">
+  <body onload="includeHTML(); loadAll()">
     <main>
       <sidebar w3-include-html="./templates/sidebar.html"></sidebar>
       <section>

@@ -5,6 +5,7 @@ function showPosts() {
     const posts = content[i];
     post.innerHTML += contentHTML(i, posts);
     editComment(i);
+    likePost(i);
   }
 }
 
@@ -17,6 +18,7 @@ function editComment(i) {
     const username = dialog["user"][j];
     comment.innerHTML += /* html */ `<div><b>${username}:</b> ${mycomment}</div>`;
   }
+  saveLocal();
 }
 
 function addComment(i) {
@@ -26,4 +28,19 @@ function addComment(i) {
   content[i]["comments"].push(input.value);
   editComment(i);
   input.value = "";
+}
+
+function likePost(i) {
+  let showLike = document.getElementById(`like${i}`);
+  let like = content[i];
+  if (like["mylike"] == false) {
+    like["mylike"] = true;
+    like["likes"] += 1;
+  }
+  else{
+    like["mylike"] = false;
+    like["likes"] -= 1;
+  }
+  showLike.innerHTML= ` gefällt ${like["likes"]} anderen`
+  saveLocal();
 }

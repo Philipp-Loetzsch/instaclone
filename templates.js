@@ -14,21 +14,10 @@ function contentHTML(i, posts) {
         <button>allcomments</button>
         <button>share</button>
       </div> <br>
-      <div style="color:white;" id="like${i}">gefällt ${posts["likes"]}  anderen</div> <br>
+      <div style="color:white;" id="like${i}"></div> <br>
+      <div><a class="hashtags" href="${posts["linksurl"]}">#${posts["link"]}</a></div> <br>
       <div id="comments${i}"></div> <br>
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
-}
+    }
 
-function likePost(i) {
-  let like = content[i];
-  if (like["mylike"] == false) {
-    like["mylike"] = true;
-    like["likes"] += 1;
-  }
-  else if(like["mylike"] == true){
-    like["mylike"] = false;
-    like["likes"] -= 1;
-  }
-  document.getElementById(`like${i}`).innerHTML= ` gefällt  ${like["likes"]}  anderen`
-}
