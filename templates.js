@@ -20,3 +20,4 @@ function contentHTML(i, posts) {
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
 }
+

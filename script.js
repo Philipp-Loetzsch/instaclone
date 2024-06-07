@@ -8,7 +8,7 @@ function showPosts() {
       document.getElementById(`hashtags${i}`).classList.add("d-none");
     }
     editComment(i);
-    likePost(i);
+    showLikes(i);
   }
 }
 
@@ -34,7 +34,6 @@ function addComment(i) {
 }
 
 function likePost(i) {
-  let showLike = document.getElementById(`like${i}`);
   let like = content[i];
   if (like["mylike"] == false) {
     like["mylike"] = true;
@@ -43,6 +42,11 @@ function likePost(i) {
     like["mylike"] = false;
     like["likes"] -= 1;
   }
-  showLike.innerHTML = ` gefällt ${like["likes"]} anderen`;
+  showLikes(i);
   saveLocal();
+}
+
+function showLikes(i) {
+  let showLike = document.getElementById(`like${i}`);
+  showLike.innerHTML = ` gefällt ${content[i]["likes"]} anderen`;
 }

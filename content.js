@@ -23,24 +23,5 @@ let content = [
     user: ["Katzenonkel64", "mauzi052"],
     comments: ["Klasse", ":-*"],
   },
-  {
-    profilpic: "assests/img/catwomen.jpg",
-    name: "Catwoman",
-    location: "Mauzhausen",
-    image: "assests/img/katzen.jpg",
-    likes: 345,
-    mylike: false,
-    user: ["katzenonkel43", "mauzi052"],
-    comments: ["super süß", ":-*"],
-  },
-  {
-    profilpic: "assests/img/catwomen.jpg",
-    name: "Catwoman",
-    location: "Mauzhausen",
-    image: "assests/img/katzen.jpg",
-    likes: 345,
-    mylike: false,
-    user: ["katzenonkel43", "mauzi052"],
-    comments: ["super süß", ":-*"],
-  },
+
 ];
