@@ -1,12 +1,3 @@
-.profilpic {
-  min-width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  padding: 1px;
-  border: 1px solid red;
-  display: flex;
-}
 .post{
   margin-bottom:48px ;
   max-width: 800px;

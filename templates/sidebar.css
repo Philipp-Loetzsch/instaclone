@@ -1,5 +1,5 @@
 sidebar {
-  background-image: linear-gradient(rgb(24, 28, 34), rgb(75, 58, 121));
+  background-color: rgb(24, 28, 34);
   box-shadow: 6px 0px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0 8px;
   cursor: default;
@@ -29,10 +29,19 @@ navbar {
   flex-direction: column;
   gap: 30px;
 }
+.profilpic {
+  min-width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1px;
+  border: 1px solid red;
+  display: flex;
+}
 #profileStats {
   width: 100%;
   display: flex;
- 
+
   tbody {
     display: flex;
     justify-content: space-around;
@@ -43,7 +52,6 @@ navbar {
       align-items: center;
     }
   }
-  
 }
 .description {
   color: gray;
@@ -77,8 +85,8 @@ navigation {
   width: 50px;
 }
 
-@media screen and (max-width: 700px){
-  sidebar{
-  display: none;
+@media screen and (max-width: 700px) {
+  sidebar {
+    display: none;
   }
 }
