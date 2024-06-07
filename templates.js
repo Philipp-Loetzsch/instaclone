@@ -9,8 +9,8 @@ function contentHTML(i, posts) {
           </div>
       </div> <br>
       <img class="postimage" src="${posts["image"]}" alt="Inhaltsbild">
-      <div>
-        <button onclick="likePost(${i})">like</button>
+      <div class="postbuttons">
+        <button onclick="likePost(${i})"><img src="./assets/img/heartempty.svg" alt="heart"></button>
         <button>allcomments</button>
         <button>share</button>
       </div> 

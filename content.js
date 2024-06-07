@@ -1,9 +1,9 @@
 let content = [
   {
-    profilpic: "assests/img/kochwelt.png",
+    profilpic: "assets/img/kochwelt.png",
     name: "Kochwelt161",
     location: "Deutschland",
-    image: "assests/img/steak.jpg",
+    image: "assets/img/steak.jpg",
     likes: 345 ,
     mylike: false,
     linksurl: ["https://kochwelt-161.developerakademie.net/kochwelt/index.html"],
@@ -12,10 +12,10 @@ let content = [
     comments: ["Super lecker", "Ein Gedicht für den Gaumen"],
   },
   {
-    profilpic: "assests/img/catwomen.jpg",
+    profilpic: "assets/img/catwomen.jpg",
     name: "Catwoman",
     location: "Maunzhausen",
-    image: "assests/img/katzen.jpg",
+    image: "assets/img/katzen.jpg",
     likes: 345,
     mylike: false,
     linksurl: [],
