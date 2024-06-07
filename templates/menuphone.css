@@ -22,14 +22,15 @@ mobilenavigation {
 #headMobile {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
+  font-size: 12px;
   img {
     width: 32px;
     border-radius: 10px;
   }
 }
 #imgFeedMobile {
-  width: 40px;
+  width: 32px;
 }
 #mobileMenuEnd{
     display: flex;
@@ -38,8 +39,8 @@ mobilenavigation {
 }
 
 .profilpicmobile {
-  min-width: 40px;
-  height: 40px;
+  min-width: 20px;
+  height: 20px;
   object-fit: cover;
   border-radius: 50%;
   padding: 1px;
@@ -48,7 +49,7 @@ mobilenavigation {
 }
 .mobilemenu {
   img {
-    width: 20px;
+    width: 16px;
   }
 }
 
