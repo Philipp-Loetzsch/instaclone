@@ -10,9 +10,9 @@ function contentHTML(i, posts) {
       </div> <br>
       <img class="postimage" src="${posts["image"]}" alt="Inhaltsbild">
       <div class="postbuttons">
-        <button onclick="likePost(${i})"><img src="./assets/img/heartempty.svg" alt="heart"></button>
-        <button>allcomments</button>
-        <button>share</button>
+        <button onclick="likePost(${i})" title="like" id="likeButton${i}"><img src="./assets/img/heartempty.svg" alt="heart"></button>
+        <button title="Zeige alle Kommentare"><img src="./assets/img/allcomments.png" alt="all comments"></button>
+        <button title="teilen"><img src="./assets/img/share.png" alt=""></button>
       </div> 
       <p> <div style="color:white;" id="like${i}"></div> </p>
       <div><a class="hashtags" id="hashtags${i}" href="${posts["linksurl"]}">#${posts["link"]}</a></div>
@@ -20,4 +20,3 @@ function contentHTML(i, posts) {
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
 }
-
