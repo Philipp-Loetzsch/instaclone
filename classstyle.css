@@ -23,7 +23,7 @@
     color: gray;
   }
 }
-.hashtags{
+.hashtags a{
   color:rgb(39, 202, 202);
   text-decoration: none;
 }

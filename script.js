@@ -9,53 +9,18 @@ function showPosts() {
     }
     editComment(i);
     showLikes(i);
+    showLinks(i)
   }
 }
 
-function editComment(i) {
-  let comment = document.getElementById(`comments${i}`);
-  comment.innerHTML = "";
-  const dialog = content[i];
-  for (let j = 0; j < dialog["comments"].length; j++) {
-    const mycomment = dialog["comments"][j];
-    const username = dialog["user"][j];
-    comment.innerHTML += /* html */ `<div><b>${username}:</b> ${mycomment}</div>`;
-  }
-  saveLocal();
-}
-
-function addComment(i) {
-  let myuser = "philipplötzsch";
-  let input = document.getElementById(`inputComment${i}`);
-  content[i]["user"].push(myuser);
-  content[i]["comments"].push(input.value);
-  editComment(i);
-  input.value = "";
-}
-
-function likePost(i) {
-  let like = content[i];
-  if (like["mylike"] == false) {
-    like["mylike"] = true;
-    like["likes"] += 1;
-  } else {
-    like["mylike"] = false;
-    like["likes"] -= 1;
-  }
-  showLikes(i);
-  saveLocal();
-}
-
-function showLikes(i) {
-  let likeStatus = content[i];
-  let showLike = document.getElementById(`like${i}`);
-  showLike.innerHTML = ` gefällt ${content[i]["likes"]} anderen`;
-  let chooseButton = document.getElementById(`likeButton${i}`);
-  if (likeStatus["mylike"] == true) {
-    chooseButton.innerHTML = `
-      <img src="./assets/img/heartfull.svg" alt="heart">`;
-  } else {
-    chooseButton.innerHTML = `<img src="./assets/img/heartempty.svg" alt="heart">`;
+function showLinks(i){
+  let links = document.getElementById(`hashtags${i}`);
+  links.innerHTML = "";
+  const hashtags = content[i];
+  for (let j = 0; j < hashtags["linksurl"].length; j++) {
+    const url = hashtags["linksurl"][j];
+    const hashtag = hashtags["link"][j];
+    links.innerHTML += /* html */ `<a  href="${url}">#${hashtag} </a>`;
   }
 }
 
