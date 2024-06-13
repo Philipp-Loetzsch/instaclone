@@ -8,6 +8,7 @@ footer{
     padding-left: 20px;
     box-sizing: border-box;
     cursor: default;
+    color: white;
     a{
         color: white;
         text-decoration: none;

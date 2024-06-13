@@ -15,8 +15,9 @@ function contentHTML(i, posts) {
         <button title="teilen"><img src="./assets/img/share.png" alt=""></button>
       </div> 
       <p> <div style="color:white;" id="like${i}"></div> </p>
+      <p class="post-description"> <b> ${posts["description"]} </b></p>
       <div class="hashtags" id="hashtags${i}"></div>
-      <p><div id="comments${i}"></div> </p>
+      <p>Kommentare:<div id="comments${i}"></div> </p>
       <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
     </div>`;
 }

@@ -4,23 +4,22 @@ function showPosts() {
   for (let i = 0; i < content.length; i++) {
     const posts = content[i];
     post.innerHTML += contentHTML(i, posts);
-    if (posts["linksurl"] == "") {
+    if (posts["link"] == "") {
       document.getElementById(`hashtags${i}`).classList.add("d-none");
     }
     editComment(i);
     showLikes(i);
-    showLinks(i)
+    showLinks(i);
   }
 }
 
-function showLinks(i){
+function showLinks(i) {
   let links = document.getElementById(`hashtags${i}`);
   links.innerHTML = "";
   const hashtags = content[i];
-  for (let j = 0; j < hashtags["linksurl"].length; j++) {
+  for (let j = 0; j < hashtags["link"].length; j++) {
     const url = hashtags["linksurl"][j];
     const hashtag = hashtags["link"][j];
     links.innerHTML += /* html */ `<a  href="${url}">#${hashtag} </a>`;
   }
 }
-

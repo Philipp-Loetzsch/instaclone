@@ -8,4 +8,5 @@ function loadLocal() {
   if (contentAsText) {
     content = JSON.parse(contentAsText);
   }
+  showPosts();
 }

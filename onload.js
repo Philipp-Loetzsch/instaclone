@@ -11,8 +11,3 @@ async function includeHTML() {
     }
   }
 }
-
-function loadAll() {
-  loadLocal();
-  showPosts();
-}

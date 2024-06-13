@@ -13,6 +13,7 @@ navbar {
   position: sticky;
   top: 0;
   color: white;
+
 }
 #head {
   display: flex;
@@ -58,6 +59,7 @@ navbar {
 }
 navigation {
   padding-left: 24px;
+  padding-bottom: 16px;
   box-sizing: border-box;
   margin-top: 32px;
   gap: 32px;
