@@ -18,9 +18,8 @@ function showLikes(i) {
   if (likeStatus["mylike"] == true) {
     chooseButton.innerHTML = `
         <img src="./assets/img/heartfull.svg" alt="heart">`;
-    showLike.innerHTML = ` gefällt dir und ${content[i]["likes"]} anderen`;
   } else {
     chooseButton.innerHTML = /* html */ `<img src="./assets/img/heartempty.svg" alt="heart">`;
-    showLike.innerHTML = ` gefällt ${content[i]["likes"]} anderen`;
   }
+  showLike.innerHTML = ` gefällt ${content[i]["likes"]} Personen`;
 }
