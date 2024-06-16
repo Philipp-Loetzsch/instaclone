@@ -14,11 +14,13 @@ function contentHTML(i, posts) {
         <button title="Zeige alle Kommentare"><img src="./assets/img/allcomments.png" alt="all comments"></button>
         <button title="teilen"><img src="./assets/img/share.png" alt=""></button>
       </div> 
-      <p> <div style="color:white;" id="like${i}"></div> </p>
+      <p> <div id="like${i}"></div> </p>
       <p class="post-description"> <b> ${posts["description"]} </b></p>
       <div class="hashtags" id="hashtags${i}"></div>
-      <p> <h3>Kommentare:</h3><div id="comments${i}"></div> </p>
-      <input type="text" id="inputComment${i}" placeholder="Kommentar" > <button onclick="addComment(${i})">OK</button>
+      <p> <h4>Kommentare:</h4> <br> 
+      <div id="comments${i}" class="comments"></div> </p>
+      <form id="addComment" onsubmit="addComment(${i}); return false">
+      <input type="text" id="inputComment${i}" class="input-comment" placeholder="Kommentar" required> <button type="submit" class="btn-post">posten</button>
+      </form>
     </div>`;
 }
-

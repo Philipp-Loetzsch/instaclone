@@ -1,10 +1,28 @@
-.d-flex {
-    display: flex;
+@font-face {
+  font-family: "Neonderthaw-Regular";
+  src: url("/assets/fonts/Neonderthaw-Regular.ttf") Format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf") Format("truetype");
 }
 
-button{
-    cursor: pointer;
+.d-flex {
+  display: flex;
 }
-.d-none{
-    display: none;
+
+button {
+  cursor: pointer;
 }
+.d-none {
+  display: none;
+}
+
+.f-headline {
+  font-family: Neonderthaw-Regular, sans-serif;
+  font-weight: 100;
+  color: rgb(243, 73, 215);
+  text-shadow: 1px 1px 1px rgb(16, 41, 182), 0 0 1em rgb(0, 229, 255),
+    0 0 0.5em rgb(0, 229, 255);
+}
+

@@ -5,7 +5,7 @@ function editComment(i) {
     for (let j = 0; j < dialog["comments"].length; j++) {
       const mycomment = dialog["comments"][j];
       const username = dialog["user"][j];
-      comment.innerHTML += /* html */ `<div><b>${username}:</b> ${mycomment}</div>`;
+      comment.innerHTML += /* html */ `<div class="comment"><b>${username}:</b> ${mycomment}</div>`;
     }
     saveLocal();
   }
