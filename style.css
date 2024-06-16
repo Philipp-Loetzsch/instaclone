@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Neonderthaw-Regular";
+  src: url("./assets/fonts/Neonderthaw-Regular.ttf") Format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf") Format("truetype");
+}
+
 #inputSearch {
   background-image: url("./assets/img/lupe.svg");
   background-position: 10px 50%;
@@ -61,11 +70,3 @@
   background: #f811e9c4;
 }
 
-@font-face {
-  font-family: "Neonderthaw-Regular";
-  src: url("/assets/fonts/Neonderthaw-Regular.ttf") Format("truetype");
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/assets/fonts/Roboto-Regular.ttf") Format("truetype");
-}
