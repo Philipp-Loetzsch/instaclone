@@ -32,6 +32,19 @@
   );
   cursor: pointer;
 }
+
+#storyHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  button{
+    height: 20px;
+    align-self: baseline;
+    background-color: transparent;
+    color: grey;
+    border: none;
+  }
+}
 #storiepics {
   display: flex;
   gap: 32px;

@@ -15,11 +15,21 @@ mobilenavbar {
   justify-content: space-between;
 }
 mobilenavigation {
-  display: flex;
-  align-items: center;
+  padding-top: 40px;
+  justify-content: center;
+  text-align: center;
   gap: 16px;
+  position: absolute;
+  z-index: 99;
+  top: 60px;
+  width: 80px;
+  height: 400px;
+  background-color:rgb(24, 28, 34) ;
+  right: 0;
 }
 #headMobile {
+  text-decoration: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -36,6 +46,13 @@ mobilenavigation {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+#menuBtn{
+  background-color: transparent;
+  border: none;
+  img{
+    width: 24px;
+  }
 }
 
 .profilpicmobile {

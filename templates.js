@@ -17,7 +17,7 @@ function contentHTML(i, posts) {
       <p> <div id="like${i}"></div> </p>
       <p class="post-description"> <b> ${posts["description"]} </b></p>
       <div class="hashtags" id="hashtags${i}"></div>
-      <p> <h4>Kommentare <span id="commentsCount${i}" class="comments-count"></span>:</h4> <br> 
+      <p> <h4 onclick="showAllComments(${i})">Kommentare <span id="commentsCount${i}" class="comments-count"></span>:</h4> <br> 
       <div id="comments${i}" class="comments d-none"></div> </p>
       <form id="addComment" onsubmit="addComment(${i}); return false">
       <input type="text" id="inputComment${i}" class="input-comment" placeholder="Hier Kommentar eingeben" required> <button type="submit" class="btn-post">posten</button>

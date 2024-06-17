@@ -45,8 +45,10 @@ h3 {
 
 h4 {
   margin: 0;
+  width: max-content;
   font-size: 24px;
   text-shadow: 1px 1px 14px rgb(16, 41, 182);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {

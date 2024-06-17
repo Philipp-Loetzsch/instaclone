@@ -8,7 +8,9 @@ button {
 .d-none {
   display: none;
 }
-
+.d-grid{
+  display: grid;
+}
 .f-headline {
   font-family: Neonderthaw-Regular, sans-serif;
   font-weight: 100;

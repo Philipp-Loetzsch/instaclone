@@ -23,3 +23,13 @@ function showLinks(i) {
     links.innerHTML += /* html */ `<a  href="${url}">#${hashtag} </a>`;
   }
 }
+
+function showMenu(){
+  document.getElementById(`mobileNavigation`).classList.toggle("d-none")
+  document.getElementById(`mobileNavigation`).classList.toggle("d-grid")
+}
+
+function closeMenu(){
+  document.getElementById(`mobileNavigation`).classList.add("d-none")
+  document.getElementById(`mobileNavigation`).classList.remove("d-grid")
+}

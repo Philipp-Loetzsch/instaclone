@@ -19,10 +19,11 @@
     <script src="content.js"></script>
     <script src="comment.js"></script>
     <script src="likes.js"></script>
+    <script src="scrollstories.js"></script>
   </head>
-  <body onload="includeHTML(); loadLocal()">
+  <body onload="includeHTML(); loadLocal()" >
     <menuphone  w3-include-html="./templates/menuphone.html"></menuphone>
-    <main>
+    <main onclick="closeMenu()">
       <sidebar w3-include-html="./templates/sidebar.html"></sidebar>
       
       <section>
@@ -40,7 +41,13 @@
           </div>
         </header>
         <article>
+          <div id="storyHead">
           <h2>Stories</h2>
+          <div>
+          <button onclick="scrollStoriesBackward()" id="storiesBack" class="d-none">zurück</button>
+          <button onclick="scrollStoriesForward()">weitere zeigen</button>
+        </div>
+        </div>
           <div id="storiepics">
             <img
               class="p-profilpic"
@@ -89,12 +96,12 @@
             />
             <img
               class="p-profilpic"
-              src="./assets/img/profilpicPL.jpg"
+              src="./assets/img/watermelon.png"
               alt="Profilbild"
             />
             <img
               class="p-profilpic"
-              src="./assets/img/profilpicPL.jpg"
+              src="./assets/img/red-hair-girl.jpg"
               alt="Profilbild"
             />
           </div>

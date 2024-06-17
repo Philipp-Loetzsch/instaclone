@@ -16,6 +16,8 @@ navbar {
 
 }
 #head {
+  text-decoration: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 24px;
