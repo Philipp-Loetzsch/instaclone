@@ -4,13 +4,15 @@
   color: white;
 }
 .p-profilpic {
-  width: 60px;
-  height: 60px;
+  min-width: 80px;
+  max-width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   padding: 1px;
   border: 1px solid red;
   display: flex;
+  overflow: hidden;
 }
 .p-head {
   display: flex;
