@@ -60,6 +60,10 @@
   overflow: hidden;
   color: white;
 }
+.input-comment::placeholder {
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 12px;
+}
 
 .btn-post {
   font-size: 14px;
@@ -70,4 +74,7 @@
   box-shadow: 1px 1px 3px rgb(27, 24, 27);
   border-radius: 10px;
   color: white;
+}
+.comments-count {
+  color: rgba(51, 151, 138, 0.973);
 }
