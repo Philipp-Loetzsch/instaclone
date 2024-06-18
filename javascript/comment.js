@@ -25,16 +25,15 @@ function commentsCount(i) {
   document.getElementById(`commentsCount${i}`).innerHTML = `(${count})`;
 }
 
-function showAllComments(i){
-  let showComments= document.getElementById(`comments${i}`)
+function showAllComments(i) {
+  let showComments = document.getElementById(`comments${i}`);
   let showCommentsBtn = document.getElementById(`showCommentsBtn${i}`);
   showComments.classList.toggle("d-none");
 
   if (showComments.classList.contains("d-none")) {
     showCommentsBtn.innerHTML = `
         <img src="./assets/img/allcomments.png" alt="all comments">`;
-} else {
+  } else {
     showCommentsBtn.innerHTML = `<img src="./assets/img/showallcomments.png" alt="all comments">`;
-}
-
+  }
 }
