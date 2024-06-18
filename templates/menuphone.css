@@ -16,16 +16,18 @@ mobilenavbar {
 }
 mobilenavigation {
   padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
   justify-content: center;
   text-align: center;
   gap: 16px;
   position: absolute;
   z-index: 99;
   top: 60px;
-  width: 80px;
-  height: 400px;
-  background-color:rgb(24, 28, 34) ;
+  width: 100px;
+  background-color: rgb(24, 28, 34);
   right: 0;
+  overflow: hidden;
 }
 #headMobile {
   text-decoration: none;
@@ -35,22 +37,22 @@ mobilenavigation {
   gap: 8px;
   font-size: 12px;
   img {
-    width: 32px;
+    width: 40px;
     border-radius: 10px;
   }
 }
 #imgFeedMobile {
   width: 32px;
 }
-#mobileMenuEnd{
-    display: flex;
-    align-items: center;
-    gap: 8px;
+#mobileMenuEnd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-#menuBtn{
+#menuBtn {
   background-color: transparent;
   border: none;
-  img{
+  img {
     width: 24px;
   }
 }
@@ -65,13 +67,27 @@ mobilenavigation {
   display: flex;
 }
 .mobilemenu {
+  a {
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
   img {
-    width: 16px;
+    justify-self: center;
+    padding-bottom: 12px;
+    width: 24px;
   }
 }
 
 @media screen and (min-width: 701px) {
   menuphone {
     display: none;
+  }
+}
+@media screen and (max-height: 500px) {
+  mobilenavigation {
+    padding-top: 0px;
   }
 }

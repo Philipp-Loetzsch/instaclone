@@ -13,6 +13,7 @@
   border: 1px solid red;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
 }
 .p-head {
   display: flex;

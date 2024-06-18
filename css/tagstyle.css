@@ -23,6 +23,7 @@ section {
   padding: 10px 10px 10px 40px;
   box-sizing: border-box;
   overflow: hidden;
+  max-width: 1600px;
 }
 header {
   display: flex;
