@@ -6,6 +6,7 @@ function contentHTML(i, posts) {
           <div class="p-title">
             <h3>${posts["name"]}</h3>
             <span>${posts["location"]}</span>
+            <span>${posts["date"]}</span>
           </div>
       </div> <br>
       <img class="postimage" src="${posts["image"]}" alt="Inhaltsbild">
