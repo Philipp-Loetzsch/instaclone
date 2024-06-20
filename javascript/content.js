@@ -8,7 +8,7 @@ let content = [
     likes: 345 ,
     mylike: false,
     description:"NEU!! Check unser Gericht des Tages!!",
-    linksurl: ["https://kochwelt-161.developerakademie.net/kochwelt/index.html", "https://developerakademie.com/"],
+    linksurl: ["#", "#"],
     link:["kochwelt","develperakademie"],
     user: ["feinschmecker62", "lafer36"],
     comments: ["Super lecker", "Ein Gedicht für den Gaumen"],
